@@ -6,14 +6,15 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Download, PhoneIcon as WhatsApp } from "lucide-react"
 
-import MobileMenu from "./components/mobile-menu"
-import FAQItem from "./components/faq-item"
-import ContactForm from "./components/contact-form"
-import ThemeToggle from "./components/theme-toggle"
-import AnimatedSection from "./components/animated-section"
-import SkillCard from "./components/skill-card"
-import TechCarousel from "./components/tech-carousel"
-import EducationItem from "./components/education-item"
+import MobileMenu from "@/components/mobile-menu"
+import TechCarousel from "@/components/tech-carrusel"
+import AnimatedSection from "@/components/animated-section"
+import SkillCard from "@/components/skills-card"
+import EducationItem from "@/components/education"
+import FAQItem from "@/components/faq"
+import ContactForm from "@/components/contact"
+
+
 
 export default function Portfolio() {
  
@@ -46,7 +47,7 @@ export default function Portfolio() {
       <header className="container mx-auto px-4 py-6 flex justify-between items-center sticky top-0 z-40 backdrop-blur-md bg-white/80 dark:bg-black/80">
         <div className="flex items-center gap-2">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/foto%20de%20perfil.jpg-BJcVswHIY4VnuOeK2zRCQKAtNL3N4M.jpeg"
+            src="/foto de perfil.jpg"
             width={32}
             height={32}
             alt="Nahuel Davila"
@@ -57,7 +58,7 @@ export default function Portfolio() {
           <span className="text-xs text-gray-600 dark:text-gray-400">Full Stack Developer</span>
         </div>
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+      
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#" className="text-sm hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
               Inicio
@@ -343,6 +344,15 @@ export default function Portfolio() {
 
           <AnimatedSection>
             <EducationItem
+              title="Diplomatura en DevOps"
+              institution="En curso"
+              year="2025"
+              description="Formación sobre la cultura DevOps, automatización de procesos y despligue continuo."
+            />
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <EducationItem
               title="Secundario Completo"
               institution="F.A.S.T.A. Catamarca"
               year="2022"
@@ -366,15 +376,15 @@ export default function Portfolio() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src="/gisela.png?height=48&width=48"
                   width={48}
                   height={48}
                   alt="Cliente"
                   className="rounded-full"
                 />
                 <div>
-                  <h4 className="font-bold">María González</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">CEO de TechCorp</p>
+                  <h4 className="font-bold">Gisela Echavarria</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Peluquera</p>
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
@@ -391,20 +401,20 @@ export default function Portfolio() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src="/leo-ghion.png?height=48&width=48"
                   width={48}
                   height={48}
                   alt="Cliente"
                   className="rounded-full"
                 />
                 <div>
-                  <h4 className="font-bold">Carlos Rodríguez</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Director de Marketing en Acme Inc</p>
+                  <h4 className="font-bold">Leandro Ghion</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Account Manager</p>
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
                 "Nahuel no solo cumple con nuestros requisitos, sino que los mejora con su visión creativa. Trabajar con
-                él ha sido transformador para nuestra marca."
+                él ha sido transformador para mis clientes."
               </p>
             </motion.div>
           </AnimatedSection>
