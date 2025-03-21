@@ -16,6 +16,7 @@ import ContactForm from "@/components/contact"
 
 
 
+
 export default function Portfolio() {
  
   useEffect(() => {
@@ -128,14 +129,15 @@ export default function Portfolio() {
 
        
         <div className="flex justify-center gap-4 mb-12">
-          <a
-            href="/path-to-your-cv.pdf"
-            download
-            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center gap-2"
-          >
-            <Download size={20} />
-            Descargar CV
-          </a>
+        <a
+  href="/CV.pdf"
+  download
+  className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center gap-2"
+>
+  <Download size={20} />
+  Descargar CV
+</a>
+
           <a
             href="https://wa.me/543834232861"
             target="_blank"
@@ -151,106 +153,117 @@ export default function Portfolio() {
         <TechCarousel />
       </section>
 
-     
       <section id="portfolio" className="container mx-auto px-4 py-8 scroll-mt-24">
-        <AnimatedSection>
-          <h2 className="text-3xl font-bold mb-8 text-center">Mi Trabajo</h2>
-        </AnimatedSection>
+  <AnimatedSection>
+    <h2 className="text-3xl font-bold mb-8 text-center">Algunos de mis trabajos</h2>
+  </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <AnimatedSection>
-            <motion.div
-              className="relative group overflow-hidden rounded-xl cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/placeholder.svg?height=300&width=600"
-                width={600}
-                height={300}
-                alt="Peluqueria Gisela"
-                className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="font-bold text-xl">Peluqueria Gisela</h3>
-                <p className="text-sm text-gray-300">Gestión de peluquería (2024)</p>
-              </div>
-            </motion.div>
-          </AnimatedSection>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <AnimatedSection>
+      <a
+        href="https://github.com/nahudavila12/Turnos-pelu-Gi" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.div
+          className="relative group overflow-hidden rounded-xl cursor-pointer"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Image
+            src="/turnos.png?height=300&width=600"
+            width={600}
+            height={300}
+            alt="Peluqueria Gisela"
+            className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute bottom-0 left-0 p-4">
+            <h3 className="font-bold text-xl">Peluqueria Gisela</h3>
+            <p className="text-sm text-gray-300">Gestión de peluquería | Proyecto freelance (2024-Actualidad)</p>
+          </div>
+        </motion.div>
+      </a>
+    </AnimatedSection>
 
-          <AnimatedSection>
-            <motion.div
-              className="relative group overflow-hidden rounded-xl cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/placeholder.svg?height=300&width=600"
-                width={600}
-                height={300}
-                alt="InstaStay"
-                className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="font-bold text-xl">InstaStay</h3>
-                <p className="text-sm text-gray-300">Gestión de hoteles (2024)</p>
-              </div>
-            </motion.div>
-          </AnimatedSection>
+    <AnimatedSection>
+      <a
+        href="https://github.com/Juanmgrado/gestion-restaurant" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.div
+          className="relative group overflow-hidden rounded-xl cursor-pointer"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Image
+            src="/legourmet.png?height=300&width=600"
+            width={600}
+            height={300}
+            alt="Le Gourmet Exquisit"
+            className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute bottom-0 left-0 p-4">
+            <h3 className="font-bold text-xl">Le Gourmet Exquisit</h3>
+            <p className="text-sm text-gray-300">Gestión de Restaruante (2024)</p>
+          </div>
+        </motion.div>
+      </a>
+    </AnimatedSection>
 
-          <AnimatedSection>
-            <motion.div
-              className="relative group overflow-hidden rounded-xl cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/placeholder.svg?height=300&width=600"
-                width={600}
-                height={300}
-                alt="Github Helper"
-                className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="font-bold text-xl">Github Helper</h3>
-                <p className="text-sm text-gray-300">Proyecto personal (2024-Actualidad)</p>
-              </div>
-            </motion.div>
-          </AnimatedSection>
+    <AnimatedSection>
+      <a
+        href="https://www.microbladingartistpro.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.div
+          className="relative group overflow-hidden rounded-xl cursor-pointer"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Image
+            src="/micro.png?height=300&width=600"
+            width={600}
+            height={300}
+            alt="Microblading Artist Pro"
+            className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute bottom-0 left-0 p-4">
+            <h3 className="font-bold text-xl">Microblading Artist Pro</h3>
+            <p className="text-sm text-gray-300">Proyecto freelance (2024)</p>
+          </div>
+        </motion.div>
+      </a>
+    </AnimatedSection>
 
-          <AnimatedSection>
-            <motion.div
-              className="relative group overflow-hidden rounded-xl cursor-pointer"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/placeholder.svg?height=300&width=600"
-                width={600}
-                height={300}
-                alt="The Tere Boomstricks"
-                className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="font-bold text-xl">The Tere Boomstricks</h3>
-                <p className="text-sm text-gray-300">Proyecto académico (2024)</p>
-              </div>
-            </motion.div>
-          </AnimatedSection>
-        </div>
-
-        
-        <div className="text-center mt-8">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link
-              href="#"
-              className="inline-block text-sm text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors border-b border-gray-300 dark:border-gray-700 pb-1"
-            >
-              Ver todos los proyectos
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+    <AnimatedSection>
+      <a
+        href="https://pf-henry-front-chi.vercel.app/" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.div
+          className="relative group overflow-hidden rounded-xl cursor-pointer"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Image
+            src="/Broomsticks.png?height=300&width=600"
+            width={600}
+            height={300}
+            alt="The Tree Broomstricks"
+            className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute bottom-0 left-0 p-4">
+            <h3 className="font-bold text-xl">The Tree Broomstricks</h3>
+            <p className="text-sm text-gray-300">Proyecto académico (2025)</p>
+          </div>
+        </motion.div>
+      </a>
+    </AnimatedSection>
+  </div>
+</section>
 
       
       <section
@@ -435,7 +448,7 @@ export default function Portfolio() {
 
           <FAQItem
             question="¿Cuál es tu tiempo típico para un proyecto?"
-            answer="Los plazos varían según la complejidad del proyecto. Los sitios web simples suelen tardar de 2 a 4 semanas, mientras que las aplicaciones más complejas pueden requerir de 1 a 3 meses. Proporcionaré un cronograma detallado durante nuestra consulta inicial basado en tus requisitos específicos."
+            answer="Los plazos varían según la complejidad del proyecto. Proporcionaré un cronograma detallado durante nuestra consulta inicial basado en tus requisitos específicos."
           />
 
           <FAQItem
