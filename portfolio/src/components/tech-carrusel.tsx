@@ -11,11 +11,14 @@ const technologies = [
   { image: "/logos/redux-logo.svg", name: "Redux" },
   { image: "/logos/typescript.svg", name: "TypeScript" },
   { image: "/logos/react.svg", name: "React" },
+  { image: "/logos/react.svg", name: "React Native" },
   { image: "/logos/bootstrap.svg", name: "Bootstrap" },
   { image: "/logos/next.svg", name: "Next.js" },
   { image: "/logos/tailwind.svg", name: "Tailwind CSS" },
   { image: "/logos/Postgres.svg", name: "PostgreSQL" },
   { image: "/logos/Git_icon.svg", name: "Git" },
+  { image: "/logos/expo-icon.svg", name: "Expo" },
+
 ]
 
 export default function TechCarousel() {

@@ -30,7 +30,6 @@ export default function SkillCard({ number, title, description }: SkillCardProps
       </div>
       <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
       <Link href="#" className="text-purple-600 dark:text-purple-400 text-sm flex items-center gap-1 group">
-        Saber más
         <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ duration: 0.2 }}>
           <ChevronRight className="w-4 h-4" />
         </motion.div>

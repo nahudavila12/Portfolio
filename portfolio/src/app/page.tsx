@@ -13,6 +13,7 @@ import SkillCard from "@/components/skills-card"
 import EducationItem from "@/components/education"
 import FAQItem from "@/components/faq"
 import ContactForm from "@/components/contact"
+import Experiencia from "@/components/experiencia"
 
 
 
@@ -161,7 +162,7 @@ export default function Portfolio() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <AnimatedSection>
       <a
-        href="https://github.com/nahudavila12/Turnos-pelu-Gi" 
+        href="https://academia-nuhpcl604-nahudavila12s-projects.vercel.app/" 
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -171,15 +172,15 @@ export default function Portfolio() {
           transition={{ duration: 0.3 }}
         >
           <Image
-            src="/turnos.png?height=300&width=600"
+            src="/gisela-academia.png?height=300&width=600"
             width={600}
             height={300}
-            alt="Peluqueria Gisela"
+            alt="Gisela Echavarria"
             className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute bottom-0 left-0 p-4">
-            <h3 className="font-bold text-xl">Peluqueria Gisela</h3>
-            <p className="text-sm text-gray-300">Gestión de peluquería | Proyecto freelance (2024-Actualidad)</p>
+            <h3 className="font-bold text-xl">Gisela Echavarria Academia</h3>
+            <p className="text-sm text-gray-300">Gestión de Academia | Proyecto en proceso</p>
           </div>
         </motion.div>
       </a>
@@ -187,7 +188,7 @@ export default function Portfolio() {
 
     <AnimatedSection>
       <a
-        href="https://github.com/Juanmgrado/gestion-restaurant" 
+        href="https://energy-calculator-beta.vercel.app/" 
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -197,15 +198,15 @@ export default function Portfolio() {
           transition={{ duration: 0.3 }}
         >
           <Image
-            src="/legourmet.png?height=300&width=600"
+            src="/energy.png?height=300&width=600"
             width={600}
             height={300}
-            alt="Le Gourmet Exquisit"
+            alt="Energy Calculator"
             className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute bottom-0 left-0 p-4">
-            <h3 className="font-bold text-xl">Le Gourmet Exquisit</h3>
-            <p className="text-sm text-gray-300">Gestión de Restaruante (2024)</p>
+            <h3 className="font-bold text-xl ">Energy Calculator</h3>
+            <p className="text-sm text-gray-300">Proyecto para simular costo de energia (2025)</p>
           </div>
         </motion.div>
       </a>
@@ -318,6 +319,14 @@ export default function Portfolio() {
         </div>
       </section>
 
+      <section
+        id="experiencia"
+        className="container mx-auto px-4 py-16 border-t border-gray-200 dark:border-gray-800 scroll-mt-24">
+
+      {/* Experiencia Section */}
+      <Experiencia />
+
+      </section>
      
       <section
         id="education"
@@ -377,62 +386,62 @@ export default function Portfolio() {
 
       
       <section className="container mx-auto px-4 py-16 border-t border-gray-200 dark:border-gray-800">
-        <AnimatedSection>
-          <h2 className="text-3xl font-bold mb-12">Opiniones de Clientes Satisfechos</h2>
-        </AnimatedSection>
+  <AnimatedSection>
+    <h2 className="text-3xl font-bold mb-12 text-center text-purple-400">Opiniones de Clientes Satisfechos</h2>
+  </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <AnimatedSection>
-            <motion.div
-              className="bg-gray-100 dark:bg-gray-900/50 p-6 rounded-xl"
-              whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(168, 85, 247, 0.1)" }}
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/gisela.png?height=48&width=48"
-                  width={48}
-                  height={48}
-                  alt="Cliente"
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-bold">Gisela Echavarria</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Peluquera</p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300">
-                "Nahuel dio vida a nuestra marca con visuales impresionantes y un diseño intuitivo. Su atención al
-                detalle y enfoque creativo superaron nuestras expectativas."
-              </p>
-            </motion.div>
-          </AnimatedSection>
-
-          <AnimatedSection>
-            <motion.div
-              className="bg-gray-100 dark:bg-gray-900/50 p-6 rounded-xl"
-              whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(168, 85, 247, 0.1)" }}
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/leo-ghion.png?height=48&width=48"
-                  width={48}
-                  height={48}
-                  alt="Cliente"
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-bold">Leandro Ghion</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Account Manager</p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300">
-                "Nahuel no solo cumple con nuestros requisitos, sino que los mejora con su visión creativa. Trabajar con
-                él ha sido transformador para mis clientes."
-              </p>
-            </motion.div>
-          </AnimatedSection>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <AnimatedSection>
+      <motion.div
+        className="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl border border-purple-500/50 hover:border-purple-400 transition-all"
+        whileHover={{ scale: 1.02 }}
+      >
+        <div className="flex items-center gap-4 mb-4">
+          <Image
+            src="/gisela.png?height=48&width=48"
+            width={48}
+            height={48}
+            alt="Cliente"
+            className="rounded-full border border-purple-500"
+          />
+          <div>
+            <h4 className="font-bold text-purple-400">Gisela Echavarria</h4>
+            <p className="text-sm text-gray-400">Peluquera</p>
+          </div>
         </div>
-      </section>
+        <p className="text-gray-300">
+          "Nahuel dio vida a nuestra marca con visuales impresionantes y un diseño intuitivo. Su atención al detalle y
+          enfoque creativo superaron nuestras expectativas."
+        </p>
+      </motion.div>
+    </AnimatedSection>
+
+    <AnimatedSection>
+      <motion.div
+        className="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl border border-purple-500/50 hover:border-purple-400 transition-all"
+        whileHover={{ scale: 1.02 }}
+      >
+        <div className="flex items-center gap-4 mb-4">
+          <Image
+            src="/leo-ghion.png?height=48&width=48"
+            width={48}
+            height={48}
+            alt="Cliente"
+            className="rounded-full border border-purple-500"
+          />
+          <div>
+            <h4 className="font-bold text-purple-400">Leandro Ghion</h4>
+            <p className="text-sm text-gray-400">Account Manager</p>
+          </div>
+        </div>
+        <p className="text-gray-300">
+          "Nahuel no solo cumple con nuestros requisitos, sino que los mejora con su visión creativa. Trabajar con él ha
+          sido transformador para mis clientes."
+        </p>
+      </motion.div>
+    </AnimatedSection>
+  </div>
+</section>
 
      
       <section className="container mx-auto px-4 py-16 border-t border-gray-200 dark:border-gray-800">

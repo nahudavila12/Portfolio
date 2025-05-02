@@ -12,13 +12,13 @@ export default function ContactForm() {
       </p>
 
       <div className="flex flex-col gap-4">
-        {/* Opción Email */}
-        <a
-          href="mailto:nahu.davila@gmail.com"
-          className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-        >
-          Enviar Email <Mail size={20} />
-        </a>
+   {/* Opción Email */}
+<a
+  href="mailto:nahu.davila@gmail.com"
+  className="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+>
+  Enviar Email <Mail size={20} />
+</a>
 
         {/* Opción WhatsApp */}
         <a
