@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+
 import { motion } from "framer-motion"
 
 interface SkillCardProps {
@@ -31,7 +31,7 @@ export default function SkillCard({ number, title, description }: SkillCardProps
       <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
       <Link href="#" className="text-purple-600 dark:text-purple-400 text-sm flex items-center gap-1 group">
         <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ duration: 0.2 }}>
-          <ChevronRight className="w-4 h-4" />
+          
         </motion.div>
       </Link>
     </motion.div>
